@@ -1,6 +1,6 @@
 // Public site identity, used by metadata, the sitemap, JSON-LD, the masthead and the colophon.
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://sunburn.vercel.app"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://sunburn-five.vercel.app"
 ).replace(/\/$/, "");
 export const SITE_NAME = "Sunburn";
 export const SITE_TITLE = "Sunburn: shortwave radio fade-outs from solar flares, measured";
