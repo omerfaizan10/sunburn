@@ -1,0 +1,8 @@
+# The Vercel project builds web/ only; keep data and the Python env out of uploads.
+/*
+!/web
+/web/node_modules
+/web/.next
+/web/out
+/web/.env.local
+/web/.env.development.local

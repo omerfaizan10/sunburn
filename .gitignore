@@ -1,0 +1,14 @@
+.venv/
+/data/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+.next/
+out/
+.DS_Store
+
+# env and deploy
+.env*
+!.env.production
+.vercel
