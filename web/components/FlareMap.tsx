@@ -13,7 +13,7 @@ import { feature } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import landTopo from "world-atlas/land-110m.json";
 import type { FlareDetail } from "@/lib/types";
-import { fluxClass, hhmm, int, signedMin } from "@/lib/format";
+import { fluxClass, hhmm, int } from "@/lib/format";
 
 const W = 960;
 const H = 468;
@@ -139,7 +139,7 @@ export default function FlareMap({
           <span style={{ color: "var(--muted)" }}>
             {Math.round(f.rel) === 0
               ? "flare peak"
-              : `${signedMin(Math.round(f.rel))} min from peak`}
+              : `${Math.abs(Math.round(f.rel))} min ${f.rel < 0 ? "before" : "after"} peak`}
           </span>
         </div>
         <div>
